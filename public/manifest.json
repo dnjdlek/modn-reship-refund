@@ -1,0 +1,15 @@
+{
+  "short_name": "모든메디",
+  "name": "모든메디 - 핀페시아 직구, 아보다트, 카마그라, 제니칼, 타다라필 등 해외 구매대행 직구사이트",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
