@@ -68,10 +68,6 @@ const App = ({ Component, pageProps }) => {
             type="image/x-icon"
             sizes="16x16"
           />
-          <meta
-            name="naver-site-verification"
-            content="01694ecfcf5d32baabb12a3ad4b66328c8a2a7d4"
-          />
 
           <meta
             name="viewport"

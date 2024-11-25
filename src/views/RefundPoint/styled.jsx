@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   position: relative;
   min-height: calc(100vh - 98px);
+  padding-bottom: 40px;
 
   .badge {
     display: inline-block;

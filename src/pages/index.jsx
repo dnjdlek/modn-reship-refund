@@ -17,12 +17,7 @@ const Index = ({ homeBanners, best }) => {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
-        <meta
-          name="naver-site-verification"
-          content="01694ecfcf5d32baabb12a3ad4b66328c8a2a7d4"
-        />
       </Head>
-      main
       {/* <Header noBold={true} border={true} /> */}
       {/* <Home ssrData={{ homeBanners, best }} /> */}
       {/* <Footer /> */}

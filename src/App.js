@@ -81,14 +81,6 @@ function App() {
           type="image/x-icon"
           sizes="16x16"
         />
-        <meta
-          name="naver-site-verification"
-          content="4b0ed706a01fec19d87bbad060f201b02b1d827e"
-        />
-        {/* <meta
-          name="naver-site-verification"
-          content="100c6fab6e82b506f2797fb4cd6b6b81ab424eb6"
-        /> */}
       </Helmet>
       <ScrollToTop />
       {/* 토스트 얼럿 */}

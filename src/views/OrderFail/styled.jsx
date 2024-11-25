@@ -3,6 +3,11 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   position: relative;
   min-height: calc(100vh - 98px);
+  padding-bottom: 40px;
+
+  &.refund {
+    padding-bottom: 140px;
+  }
 
   .badge {
     display: inline-block;
@@ -227,6 +232,7 @@ export const Wrapper = styled.div`
     font-weight: 700;
     line-height: normal;
     cursor: pointer;
+    margin-top: 40px;
   }
 
   .static {

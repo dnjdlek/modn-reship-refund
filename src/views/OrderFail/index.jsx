@@ -44,14 +44,20 @@ const OrderFail = ({ item }) => {
     OrderFailRefund({
       order_ID: item?.order_ID,
       order_item_id: item?.order_item_id,
-      method: method,
+      refundMethod: refundMethod,
       bank: bank,
       depositor: depositor,
       account: account,
     })
       .then((res) => {
         if (res.data.code == 200) {
-          window.location.href = '/refund';
+          if (refundMethod == 'point') {
+            alert('포인트 환불이 완료되었습니다.');
+            // window.location.href = '/refund-point';
+          } else {
+            alert('계좌 환불 신청이 접수되었습니다.');
+            // window.location.href = '/refund-transfer';
+          }
         } else {
           alert('관리자에게 문의바랍니다.');
         }
@@ -63,11 +69,12 @@ const OrderFail = ({ item }) => {
       });
   };
 
-  useEffect(() => {
-    if (item?.message) {
-      alert(item.message);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (item?.message) {
+  //     alert(item.message);
+  //     window.location.href = 'https://modnmedi.net/';
+  //   }
+  // }, []);
 
   const [hide, setHide] = useState(false);
 
@@ -180,7 +187,7 @@ const OrderFail = ({ item }) => {
 
       {/*  */}
       {method == 'refund' ? (
-        <Wrapper>
+        <Wrapper className="refund">
           <p className="badge">환불 방법 선택</p>
           <h2>
             환불 받으실 방법을

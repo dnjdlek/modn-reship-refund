@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding-bottom: 700px;
+  padding-bottom: 40px;
   .badge {
     display: inline-block;
     padding: 0 12px;
