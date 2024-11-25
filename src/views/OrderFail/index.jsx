@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Wrapper } from './styled';
 import MainContainer from '../../components/MainContainer';
-import { useSelector } from 'react-redux';
-import {
-  FailOrderGetPost,
-  OrderFailResend,
-  OrderFailRefund,
-  OrderGetPost,
-} from '../../api/order';
+import { OrderFailResend, OrderFailRefund } from '../../api/order';
 import { useRouter } from 'next/router';
 
 const OrderFail = ({ item }) => {
@@ -73,21 +67,6 @@ const OrderFail = ({ item }) => {
     if (item?.message) {
       alert(item.message);
     }
-  }, []);
-
-  useEffect(() => {
-    // FailOrderGetPost({
-    //   // order_ID: item?.order_ID,
-    //   order_ID: 1163135,
-    //   // order_item_id: item?.order_item_id,
-    //   order_item_id: 616,
-    // })
-    //   .then((res) => {
-    //     console.log(res);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
   }, []);
 
   const [hide, setHide] = useState(false);
