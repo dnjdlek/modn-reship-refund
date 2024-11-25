@@ -113,43 +113,6 @@ const App = ({ Component, pageProps }) => {
             property="og:image:secure_url"
             content="https://wp.modnmedi.com//wp-content/uploads/2020/11/모든메디-로고-1200x630-1.png"
           />
-
-          {/* <meta
-          name="naver-site-verification"
-          content="39fa965f2cd59bd2bd9c7c195927f25e0d5aaf58"
-        /> */}
-          {/* <meta
-          name="naver-site-verification"
-          content="6597560e27801c1fcdb8fe57ae748bbd0c4aa12f"
-        /> */}
-          <meta
-            name="naver-site-verification"
-            content="4b0ed706a01fec19d87bbad060f201b02b1d827e"
-          />
-          {/* <meta
-          name="naver-site-verification"
-          content="100c6fab6e82b506f2797fb4cd6b6b81ab424eb6"
-        /> */}
-          {/* <script
-          type="text/javascript"
-          src="https://code.jquery.com/jquery-1.12.4.min.js"
-        ></script>
-        <script src="/jquery.wheel.js"></script> */}
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-VFQYERZXJJ"
-          ></script>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-VFQYERZXJJ');
-        `,
-            }}
-          />
         </Head>
         <ToastContainer />
         <ThemeProvider theme={theme}>
