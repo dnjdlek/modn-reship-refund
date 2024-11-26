@@ -69,12 +69,12 @@ const OrderFail = ({ item }) => {
       });
   };
 
-  // useEffect(() => {
-  //   if (item?.message) {
-  //     alert(item.message);
-  //     window.location.href = 'https://modnmedi.net/';
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (item?.message) {
+      alert(item.message);
+      window.location.href = 'https://modnmedi.net/';
+    }
+  }, []);
 
   const [hide, setHide] = useState(false);
 
